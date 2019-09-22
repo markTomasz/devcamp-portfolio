@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all # calling the model inside the controller, making @port available to view
   end
 
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
@@ -19,10 +23,6 @@ class PortfoliosController < ApplicationController
     end
   end
 
-  def show
-    @portfolio_item = Portfolio.find(params[:id])
-  end
-
   def edit
     @portfolio_item = Portfolio.find(params[:id])
   end
@@ -36,6 +36,21 @@ class PortfoliosController < ApplicationController
       else
         format.html { render :edit }
       end
+    end
+  end
+
+  def destroy
+    # perform the lookup
+    @portfolio_item = Portfolio.find(params[:id])
+
+    # destroy the record
+    @portfolio_item.destroy
+
+    # redirect
+    respond_to do |format|
+      format.html {
+        redirect_to portfolios_url, notice: 'Portfolio Item was removed'
+      }
     end
   end
 end
