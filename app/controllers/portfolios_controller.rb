@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all # calling the model inside the controller, making @port available to view
   end
 
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+
   def show
     @portfolio_item = Portfolio.find(params[:id])
   end
