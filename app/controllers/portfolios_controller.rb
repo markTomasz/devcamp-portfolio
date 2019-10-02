@@ -1,6 +1,11 @@
 class PortfoliosController < ApplicationController
-  def index # when you want to list a number of items
+  # when you want to list a number of items
+  def index
     @portfolio_items = Portfolio.all # calling the model inside the controller, making @port available to view
+  end
+
+  def angular
+    @angular_portfolio_items = Portfolio.angular
   end
 
   def show
@@ -9,10 +14,14 @@ class PortfoliosController < ApplicationController
 
   def new
     @portfolio_item = Portfolio.new
+
+    # build: instantiates 3 versions of the portfolio item
+    3.times { @portfolio_item.technologies.build }
   end
 
   def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+    # strong parameters. verififies anything getting passed in belongs/corresponds to something already in the database
+    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
 
     respond_to do |format|
       if @portfolio_item.save

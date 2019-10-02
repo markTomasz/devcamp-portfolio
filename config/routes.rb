@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # except: provide all routes except...
   resources :portfolios, except: [:show]
+  get 'angular-items', to: 'portfolios#angular'
 
   # override URI pattern & add custom route method (now it appears as portfolio/1 rather than the plural)
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show' # as: = add custom route method
