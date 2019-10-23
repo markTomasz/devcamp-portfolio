@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  layout 'portfolio'
+
   # when you want to list a number of items
   def index
     @portfolio_items = Portfolio.all # calling the model inside the controller, making @port available to view
