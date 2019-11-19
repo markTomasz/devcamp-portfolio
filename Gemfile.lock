@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/markTomasz/thomas_view_tool
+  revision: 2e595c67aaeacf4c9b65154470e134f5c50c5091
+  specs:
+    thomas_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -234,6 +240,7 @@ DEPENDENCIES
   sass-rails (~> 5)
   spring
   spring-watcher-listen (~> 2.0.0)
+  thomas_view_tool!
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
