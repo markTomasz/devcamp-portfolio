@@ -49,4 +49,4 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'friendly_id', '~> 5.1.0'
 gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'thomas_view_tool', git: 'https://github.com/markTomasz/thomas_view_tool'
+gem 'mark_thomas_view_tool', '~> 0.1.0'

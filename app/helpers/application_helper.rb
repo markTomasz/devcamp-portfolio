@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    ThomasViewTool::Renderer.copyright 'Mark Thomas', 'All Rights Reserved'
+    MarkThomasViewTool::Renderer.copyright 'Mark Thomas', 'All Rights Reserved'
   end
 end
