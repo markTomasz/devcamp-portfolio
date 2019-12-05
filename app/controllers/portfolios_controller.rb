@@ -5,7 +5,7 @@ class PortfoliosController < ApplicationController
 
   # when you want to list a number of items
   def index
-    @portfolio_items = Portfolio.all # calling the model inside the controller, making @port available to view
+    @portfolio_items = Portfolio.by_position
   end
 
   def angular
