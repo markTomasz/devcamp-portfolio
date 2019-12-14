@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   # except: provide all routes except...
-  resources :portfolios, except: [:show]
+  resources :portfolios, except: [:show] do
+    put :sort, on: :collection
+  end
   get 'angular-items', to: 'portfolios#angular'
 
   # override URI pattern & add custom route method (now it appears as portfolio/1 rather than the plural)
