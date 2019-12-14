@@ -7,9 +7,14 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
 require("jquery")
+require("jquery-ui")
 require("bootstrap")
 
+//require("jquery-ui")
+require("packs/html.sortable")
+require("packs/portfolios")
 //= require jquery
 //= require bootstrap-sprockets
 
