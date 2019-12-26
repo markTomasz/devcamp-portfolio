@@ -47,6 +47,7 @@ end
 gem 'bootstrap', '~> 4.3.1'
 gem 'carrierwave-aws', '~> 1.4'
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'cocoon', '~> 1.2', '>= 1.2.14'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'

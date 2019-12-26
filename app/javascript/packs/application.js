@@ -15,6 +15,8 @@ require("bootstrap")
 //require("jquery-ui")
 require("packs/html.sortable")
 require("packs/portfolios")
+
+require("cocoon-js")
 //= require jquery
 //= require bootstrap-sprockets
 

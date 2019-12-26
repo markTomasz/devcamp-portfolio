@@ -5,7 +5,7 @@ class Portfolio < ApplicationRecord
   # create a single port item, add multiple tech tags
   # accepts NESTED ITEMS, ie multiple tags
   # console: Portfolio.create!(title: 'fsdjfds', body: 'dkshfkdsjf', technologies_attributes: [{}, {}, {}])
-  accepts_nested_attributes_for :technologies, reject_if: lambda { |attrs| attrs['name'].blank? }
+  accepts_nested_attributes_for :technologies, allow_destroy: true,  reject_if: lambda { |attrs| attrs['name'].blank? }
 
   validates_presence_of :title, :body
 
