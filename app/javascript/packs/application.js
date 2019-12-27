@@ -15,7 +15,7 @@ require("bootstrap")
 //require("jquery-ui")
 require("packs/html.sortable")
 require("packs/portfolios")
-require("packs/alerts")
+// require("packs/alerts")
 
 require("cocoon-js")
 //= require jquery
