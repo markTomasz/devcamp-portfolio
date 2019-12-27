@@ -58,4 +58,5 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'mark_thomas_view_tool', '~> 0.1.0'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'petergate', '~> 1.7'
+gem 'twitter', '~> 6.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
