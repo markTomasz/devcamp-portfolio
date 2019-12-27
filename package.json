@@ -8,9 +8,11 @@
     "@rails/webpacker": "^4.0.7",
     "bootstrap": "4.3.1",
     "cocoon-js": "^0.0.5",
+    "gritter": "^1.7.4",
     "jquery": "^3.4.1",
     "jquery-ui-dist": "^1.12.1",
     "popper.js": "^1.16.0",
+    "sweetalert2": "^9.5.4",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

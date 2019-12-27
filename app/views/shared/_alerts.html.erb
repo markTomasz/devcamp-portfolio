@@ -1,0 +1,5 @@
+<% flash.each do |type, message| %>
+  <% formatted_type = notification_type_format(type) %>
+  <div id="notification" data-type="<%= formatted_type %>" data-message="<%= message %>"></div>
+  <%= javascript_pack_tag 'alerts' %>
+<% end %>
