@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+  include SetSidebarTopics
   layout 'blog'
 
   def index
