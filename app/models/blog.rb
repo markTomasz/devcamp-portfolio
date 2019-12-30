@@ -18,4 +18,8 @@ class Blog < ApplicationRecord
   def self.published_blogs
     where(status: "published")
   end
+
+  def self.recent
+    order("created_at DESC")
+  end
 end
