@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :comments
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   # except: provide all routes except...
   resources :portfolios, except: [:show] do
@@ -23,5 +22,6 @@ Rails.application.routes.draw do
     end
   end
 
+  mount ActionCable.server => '/cable'
   root to: 'pages#home'
 end
