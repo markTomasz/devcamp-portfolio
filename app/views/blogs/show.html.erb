@@ -2,5 +2,5 @@
   <h2><%= @blog.title %></h2>
   <p><%= @blog.topic.title unless !@blog.topic %></p>
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
-  <p><%= @blog.body %></p>
+  <p><%= markdown(@blog.body) %></p>
 </div>
