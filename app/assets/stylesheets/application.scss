@@ -4,6 +4,9 @@
  * Globals
  */
 
+ $font-family-sans: 'Lato', sans-serif;
+ $font-family-serif: 'Lora', serif;
+
 /* Links */
 a,
 a:focus,
@@ -29,11 +32,17 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: $font-family-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, h2, h3, h4, h5, h6, .btn {
+  font-family: $font-family-sans;
+  font-weight: 700;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -73,6 +82,7 @@ body {
 }
 
 .nav-masthead .nav-link {
+  font-family: $font-family-sans;
   padding: .25rem 0;
   font-weight: bold;
   color: rgba(255,255,255,.5);
@@ -156,7 +166,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -213,3 +223,28 @@ body {
  .app-footer {
    color: white;
  }
+
+ .tech-news {
+   color: #000;
+   margin: 20px;
+ }
+
+ .tech-news a {
+    color: green;
+ }
+
+.app-card-container {
+  color: #000;
+  text-align: left;
+  & > .card {
+    padding: 40px;
+  }
+}
+
+.card-block {
+  margin: 5px 0;
+}
+
+.skill {
+  margin: 10px 0;
+}

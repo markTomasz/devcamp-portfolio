@@ -1,8 +1,16 @@
 @import "bootstrap";
 @import "jquery-ui";
 
+$font-family-sans: 'Lato', sans-serif;
+$font-family-serif: 'Lora', serif;
+
 body {
+  font-family: $font-family-serif;
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+h1, h2, h3, h4, h5, h6, .btn {
+  font-family: $font-family-sans;
 }
 
 .navbar {
@@ -37,7 +45,7 @@ body {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;

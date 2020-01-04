@@ -5,8 +5,13 @@ class PagesController < ApplicationController
   end
 
   def about
+    @skills = Skill.all.order("id ASC")
   end
 
   def contact
+  end
+
+  def tech_news
+    @tweets = SocialTool.twitter_seach
   end
 end

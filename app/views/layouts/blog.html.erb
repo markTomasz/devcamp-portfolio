@@ -10,7 +10,8 @@
   <%= csp_meta_tag %>
 
   <meta name="keywords" content="<%= @seo_keywords %>">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Lora:400,700&display=swap" rel="stylesheet"> 
+  <%= favicon_link_tag 'favicons/favicon.ico' %>
   <%= stylesheet_link_tag 'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
@@ -28,8 +29,6 @@
       <%= yield %>
 
       <%= render 'shared/blog_sidebar' %>
-
-      <%= source_helper("blog") %>
 
     </div>
     <%= render 'shared/blog_footer' %>
