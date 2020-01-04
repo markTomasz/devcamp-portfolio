@@ -223,3 +223,10 @@ body {
     color: green;
  }
 
+.app-card-container {
+  color: #000;
+  text-align: left;
+  & > .card {
+    padding: 40px;
+  }
+}
